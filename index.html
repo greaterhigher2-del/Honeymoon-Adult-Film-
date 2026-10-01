@@ -6,17 +6,19 @@
   <title>Honeymoon Adult Films</title>
 
   <style>
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #111;
-      color: white;
+      color: #fff;
     }
 
     header {
-      padding: 25px 20px;
       text-align: center;
-      background: #1d1d1d;
+      padding: 30px 15px;
+      background: #1b1b1b;
     }
 
     header h1 {
@@ -35,18 +37,19 @@
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 8px;
     }
 
     .hero {
       text-align: center;
-      padding: 60px 20px;
+      padding: 55px 20px;
     }
 
     .hero h2 {
       font-size: 32px;
+      margin-bottom: 10px;
     }
 
     .hero p {
@@ -58,8 +61,8 @@
 
     .button {
       display: inline-block;
-      margin-top: 25px;
-      padding: 14px 25px;
+      margin-top: 20px;
+      padding: 12px 22px;
       background: #e91e63;
       color: white;
       text-decoration: none;
@@ -67,9 +70,14 @@
     }
 
     .section {
-      padding: 30px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 35px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 25px;
     }
 
     .cards {
@@ -80,89 +88,115 @@
 
     .card {
       background: #222;
-      padding: 25px;
       border-radius: 10px;
+      overflow: hidden;
       text-align: center;
+    }
+
+    .thumbnail {
+      height: 140px;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card p {
+      color: #aaa;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      background: #1d1d1d;
+      padding: 30px 15px;
+      background: #1b1b1b;
       color: #aaa;
-      margin-top: 40px;
+      margin-top: 30px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Honeymoon Adult Films</h1>
-    <p>Premium adult entertainment</p>
-  </header>
+<header>
+  <h1>Honeymoon Adult Films</h1>
+  <p>Premium adult entertainment</p>
+</header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#videos">Videos</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#">Home</a>
+  <a href="#videos">Videos</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section class="hero">
-    <h2>Welcome</h2>
-    <p>
-      Welcome to Honeymoon Adult Films.
-      This website is for adults only and features legal,
-      consensual content featuring adults.
-    </p>
+<section class="hero">
+  <h2>Welcome</h2>
+  <p>
+    Welcome to Honeymoon Adult Films.
+    This website is for adults only and features legal,
+    consensual content featuring adults.
+  </p>
+  <a class="button" href="#videos">View Videos</a>
+</section>
 
-    <a class="button" href="#videos">View Videos</a>
-  </section>
+<section class="section" id="videos">
+  <h2>Featured Videos</h2>
 
-  <section class="section" id="videos">
-    <h2>Featured Videos</h2>
+  <div class="cards">
 
-    <div class="cards">
-
-      <div class="card">
+    <div class="card">
+      <div class="thumbnail">Video Thumbnail</div>
+      <div class="card-content">
         <h3>Video 1</h3>
-        <p>Video description</p>
+        <p>Premium video</p>
         <a class="button" href="#">View</a>
       </div>
-
-      <div class="card">
-        <h3>Video 2</h3>
-        <p>Video description</p>
-        <a class="button" href="#">View</a>
-      </div>
-
-      <div class="card">
-        <h3>Video 3</h3>
-        <p>Video description</p>
-        <a class="button" href="#">View</a>
-      </div>
-
     </div>
-  </section>
 
-  <section class="section" id="about">
-    <h2>About</h2>
-    <p>
-      Honeymoon Adult Films provides legal adult entertainment.
-      All performers are consenting adults.
-    </p>
-  </section>
+    <div class="card">
+      <div class="thumbnail">Video Thumbnail</div>
+      <div class="card-content">
+        <h3>Video 2</h3>
+        <p>Premium video</p>
+        <a class="button" href="#">View</a>
+      </div>
+    </div>
 
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Contact information will be added here.</p>
-  </section>
+    <div class="card">
+      <div class="thumbnail">Video Thumbnail</div>
+      <div class="card-content">
+        <h3>Video 3</h3>
+        <p>Premium video</p>
+        <a class="button" href="#">View</a>
+      </div>
+    </div>
 
-  <footer>
-    <p>18+ only. All performers are consenting adults.</p>
-    <p>© 2026 Honeymoon Adult Films</p>
-  </footer>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>About</h2>
+  <p>
+    Honeymoon Adult Films provides legal adult entertainment.
+    All performers are consenting adults.
+  </p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Contact information will be added here.</p>
+</section>
+
+<footer>
+  <p>18+ only. All performers are consenting adults.</p>
+  <p>© 2026 Honeymoon Adult Films</p>
+</footer>
 
 </body>
-    </html>
+</html>
